@@ -1,12 +1,16 @@
 services:
   app:
+    build: .
     container_name: metamcp
-    image: ghcr.io/metatool-ai/metamcp:latest
-    pull_policy: always
+#    image: ghcr.io/metatool-ai/metamcp:latest
+    pull_policy: never
     env_file:
       - .env
     ports:
       - "12008:12008"
+    volumes:
+      - /usr/local/bin/host-spawn:/usr/local/bin/host-spawn:ro
+      - /run/host-spawn:/run/host-spawn
     environment:
       # Postgres connection details
       POSTGRES_HOST: ${POSTGRES_HOST:-postgres}

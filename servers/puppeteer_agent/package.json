@@ -1,0 +1,22 @@
+{
+  "name": "puppeteer-browser-agent",
+  "version": "1.0.0",
+  "description": "Headful Chrome agent with puppeteer-extra plugins",
+  "main": "agent_browser_controller.js",
+  "scripts": {
+    "start": "node agent_browser_controller.js"
+  },
+  "dependencies": {
+    "puppeteer": "^21.3.8",
+    "puppeteer-extra": "^3.3.4",
+    "puppeteer-extra-plugin-stealth": "^2.11.1",
+    "puppeteer-extra-plugin-recaptcha": "^3.4.0",
+    "puppeteer-extra-plugin-adblocker": "^2.13.0",
+    "puppeteer-extra-plugin-anonymize-ua": "^2.3.5",
+    "puppeteer-extra-plugin-user-preferences": "^2.3.3",
+    "puppeteer-extra-plugin-block-resources": "^2.3.5",
+    "puppeteer-extra-plugin-devtools": "^2.3.3",
+    "puppeteer-extra-plugin-repl": "^2.1.6"
+  }
+}
+

@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "playwright-extra": {
+      "command": "node",
+      "args": ["/home/h/.nerve/other_projects/ai_commander/mcp-playwright-extra/index.js"],
+      "transport": "stdio",
+      "description": "Playwright Extra MCP server with stealth mode and plugins"
+    }
+  }
+}
